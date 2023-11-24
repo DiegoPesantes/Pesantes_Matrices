@@ -44,5 +44,15 @@ int main(int argc, char const *argv[])
             Transpuesta[j][i] = matriz[i][j];
         }
     }
+
+//Imprimimos la matriz transpuesta//
+
+        printf("Matriz transpuesta\n");
+    for (int i = 0; i < c; i++) {
+        for (int j = 0; j < f; j++) {
+            printf("%d ", Transpuesta[i][j]);
+        }
+        printf("\n");
+    }
     return 0;
 }
