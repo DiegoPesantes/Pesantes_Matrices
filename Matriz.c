@@ -34,5 +34,15 @@ int main(int argc, char const *argv[])
     }
         printf("\n");
     }
+
+//Calculamos la matriz transpuesta//
+
+        int Transpuesta[c][f];
+
+        for (int i = 0; i < f; i++) {
+        for (int j = 0; j < c; j++) {
+            Transpuesta[j][i] = matriz[i][j];
+        }
+    }
     return 0;
 }
