@@ -24,7 +24,15 @@ int main(int argc, char const *argv[])
         }
         
     }
-    
-    
+//Imprimimos la matriz original//
+    printf("Matriz original");
+        for (int i = 0; i < f; i++)
+    {
+        for (int j = 0; i < c;j++)
+        {
+            printf("%d", matriz[i][j]);
+    }
+        printf("\n");
+    }
     return 0;
 }
