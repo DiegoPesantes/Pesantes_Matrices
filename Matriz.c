@@ -13,13 +13,14 @@ int main(int argc, char const *argv[])
     scanf("%d", &f);
     printf("Ingrese el numero de columnas");
     scanf("%d", &c);
-
+//Creacion sentencia for para la matriz original//
     int matriz[f][c];
     for (int i = 0; i < f; i++)
     {
         for (int j = 0; i < c;j++)
         {
-            /* code */
+//Damos valores aleatorios a la matriz//
+        matriz[i][j]= rand()%101;
         }
         
     }
