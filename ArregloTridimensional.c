@@ -5,13 +5,13 @@ int main(int argc, char const *argv[])
     int x, y, z;
 
     // Pedir datos al usuario
-    printf("Ingrese la dimensión x: ");
+    printf("Ingrese el numero de matrices: ");
     scanf("%d", &x);
 
-    printf("Ingrese la dimensión y: ");
+    printf("La cantidad de filas: ");
     scanf("%d", &y);
 
-    printf("Ingrese la dimensión z: ");
+    printf("Ingrese la cantidad de columnas: ");
     scanf("%d", &z);
 
     int matriz[x][y][z];
@@ -30,5 +30,17 @@ int main(int argc, char const *argv[])
             matriz[x - 1][j][k] = 1;
         }
     }
+    // Imprimir el arreglo tridimensional
+    printf("Arreglo tridimensional:\n");
+    for (int i = 0; i < x; i++) {
+        for (int j = 0; j < y; j++) {
+            for (int k = 0; k < z; k++) {
+                printf("%d ", matriz[i][j][k]);
+            }
+            printf("\n");
+        }
+        printf("\n");
+    }
+
     return 0;
 }
