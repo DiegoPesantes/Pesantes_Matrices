@@ -24,5 +24,11 @@ int main(int argc, char const *argv[])
             }
         }
     }
+     // Hace que la última matriz sean unos
+    for (int j = 0; j < y; j++) {
+        for (int k = 0; k < z; k++) {
+            matriz[x - 1][j][k] = 1;
+        }
+    }
     return 0;
 }
